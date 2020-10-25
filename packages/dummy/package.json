@@ -1,0 +1,41 @@
+{
+  "name": "@dummy/dummy",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/{OWNER}/{REPOSITORY_NAME}/tree/main/packages/dummy#readme",
+  "bugs": {
+    "url": "https://github.com/{OWNER}/{REPOSITORY_NAME}/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": ""
+  },
+  "files": [
+    "lib"
+  ],
+  "source": "src/index.ts",
+  "main": "lib/index.js",
+  "module": "lib/index.module.js",
+  "unpkg": "lib/index.umd.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/{OWNER}/{REPOSITORY_NAME}",
+    "directory": "packages/dummy"
+  },
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "microbundle",
+    "clean": "rimraf lib/*",
+    "dev": "microbundle watch",
+    "prepack": "npm run build",
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {},
+  "publishConfig": {
+    "access": "public"
+  }
+}

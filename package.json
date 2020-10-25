@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "homepage": "https://github.com/{OWNER}/{REPOSITORY_NAME}#readme",
+  "scripts": {
+    "cz": "npx git-cz"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@commitlint/config-lerna-scopes": "^11.0.0",
+    "@commitlint/prompt-cli": "^11.0.0",
+    "@types/jest": "^26.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "commitizen": "^4.1.2",
+    "conventional-changelog-cli": "^2.0.34",
+    "conventional-changelog-conventionalcommits": "^4.3.1",
+    "eslint": "^7.12.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.2.5",
+    "jest": "^26.1.0",
+    "lerna": "^3.22.1",
+    "lint-staged": "^10.2.11",
+    "microbundle": "^0.12.4",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^3.1.0",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.1.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
